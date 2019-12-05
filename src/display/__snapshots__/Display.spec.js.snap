@@ -7,11 +7,13 @@ exports[`<Display /> snapshop 1`] = `
   >
     <div
       class="led green-led"
+      data-testid="lock"
     >
       Unlocked
     </div>
     <div
       class="led green-led"
+      data-testid="open-close"
     >
       Open
     </div>

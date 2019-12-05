@@ -6,7 +6,6 @@ import "@testing-library/jest-dom/extend-expect";
 import Dashboard from './Dashboard';
 
 
-
 test ("<Dashboard /> snapshop", () =>  {
 
     const wrapper = rtl.render(<Dashboard />);
@@ -14,3 +13,14 @@ test ("<Dashboard /> snapshop", () =>  {
     expect(wrapper.asFragment()).toMatchSnapshot();
 
 });
+
+test("Initial state displays Unlocked and Open", () => {
+
+    const { getByTestId } =  rtl.render(<Dashboard />);
+    const lock = getByTestId('lock');
+    const openClose = getByTestId('open-close');
+
+    expect(lock.textContent).toBe('Unlocked');
+    expect(openClose.textContent).toBe('Open');
+    
+})

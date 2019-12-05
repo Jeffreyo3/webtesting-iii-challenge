@@ -7,11 +7,13 @@ exports[`<Dashboard /> snapshop 1`] = `
   >
     <div
       class="led green-led"
+      data-testid="lock"
     >
       Unlocked
     </div>
     <div
       class="led green-led"
+      data-testid="open-close"
     >
       Open
     </div>
@@ -21,12 +23,14 @@ exports[`<Dashboard /> snapshop 1`] = `
   >
     <button
       class="toggle-btn"
+      data-testid="lockButton"
       disabled=""
     >
       Lock Gate
     </button>
     <button
       class="toggle-btn"
+      data-testid="openButton"
     >
       Close Gate
     </button>

@@ -22,5 +22,5 @@ test("Initial state displays Unlocked and Open", () => {
 
     expect(lock.textContent).toBe('Unlocked');
     expect(openClose.textContent).toBe('Open');
-    
+
 })
